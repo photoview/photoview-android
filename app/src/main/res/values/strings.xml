@@ -6,4 +6,11 @@
     <string name="nav_places">Places</string>
     <string name="nav_people">People</string>
     <string name="nav_settings">Settings</string>
+    <string name="logo_alt_text">Logo</string>
+    <string name="welcome_to_photoview">Welcome to Photoview</string>
+    <string name="connect_to_your_instance">Connect to your instance</string>
+    <string name="field_instance">Instance</string>
+    <string name="field_username">Username</string>
+    <string name="field_password">Password</string>
+    <string name="field_connect">Connect</string>
 </resources>
