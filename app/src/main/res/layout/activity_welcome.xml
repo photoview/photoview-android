@@ -101,6 +101,17 @@
 
                 </com.google.android.material.textfield.TextInputLayout>
 
+                <TextView
+                    android:id="@+id/errorMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#C80000"
+                    android:paddingTop="20dp"
+                    android:visibility="gone"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
                 <Button
                     android:id="@+id/connectButton"
                     android:height="56dp"
