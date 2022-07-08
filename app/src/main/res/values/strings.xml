@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Photoview</string>
+
+    <string name="nav_timeline">Timeline</string>
+    <string name="nav_albums">Albums</string>
+    <string name="nav_places">Places</string>
+    <string name="nav_people">People</string>
+    <string name="nav_settings">Settings</string>
+</resources>

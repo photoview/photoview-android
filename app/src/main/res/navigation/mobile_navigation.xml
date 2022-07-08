@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_timeline">
+
+    <fragment
+        android:id="@+id/navigation_timeline"
+        android:name="com.github.photoview.photoview_android.ui.timeline.TimelineFragment"
+        android:label="@string/nav_timeline"
+        tools:layout="@layout/fragment_timeline" />
+
+    <fragment
+        android:id="@+id/navigation_albums"
+        android:name="com.github.photoview.photoview_android.ui.albums.AlbumsFragment"
+        android:label="@string/nav_albums"
+        tools:layout="@layout/fragment_albums" />
+
+    <fragment
+        android:id="@+id/navigation_places"
+        android:name="com.github.photoview.photoview_android.ui.places.PlacesFragment"
+        android:label="@string/nav_places"
+        tools:layout="@layout/fragment_places" />
+
+    <fragment
+        android:id="@+id/navigation_people"
+        android:name="com.github.photoview.photoview_android.ui.people.PeopleFragment"
+        android:label="@string/nav_people"
+        tools:layout="@layout/fragment_people" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.github.photoview.photoview_android.ui.settings.SettingsFragment"
+        android:label="@string/nav_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>
