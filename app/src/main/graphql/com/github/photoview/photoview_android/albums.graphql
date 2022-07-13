@@ -1,0 +1,42 @@
+query albumViewSingleAlbum($albumID: ID!, $limit: Int!, $offset: Int!) {
+    album(id: $albumID) {
+        id
+        title
+        media(paginate: {limit: $limit, offset: $offset}) {
+            ...MediaItem
+        }
+        subAlbums {
+            ...AlbumItem
+        }
+    }
+}
+
+query myAlbums {
+    myAlbums(order: {order_by: "title"}, onlyRoot: true, showEmpty: true) {
+        ...AlbumItem
+    }
+}
+
+# A fragment for media that should be displayable in a grid
+fragment MediaItem on Media {
+    id
+    type
+    blurhash
+    thumbnail {
+        url
+        width
+        height
+    }
+    favorite
+}
+
+fragment AlbumItem on Album {
+    id
+    title
+    thumbnail {
+        blurhash
+        thumbnail {
+            url
+        }
+    }
+}

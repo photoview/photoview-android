@@ -9,9 +9,6 @@ import androidx.navigation.ui.setupWithNavController
 import com.github.photoview.photoview_android.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-fun Context.appSharedPreferences() = AppSharedPreferences(
-    this.getSharedPreferences(packageName + "_preferences", AppCompatActivity.MODE_PRIVATE))
-
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding

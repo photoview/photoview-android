@@ -51,6 +51,7 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
 
     implementation("com.apollographql.apollo3:apollo-runtime:3.3.2")
+    implementation("com.squareup.picasso:picasso:2.8")
 }
 
 apollo {

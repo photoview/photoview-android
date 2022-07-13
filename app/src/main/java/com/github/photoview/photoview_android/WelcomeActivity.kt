@@ -44,13 +44,13 @@ class WelcomeActivity : AppCompatActivity() {
                 fieldsOk = false
             }
 
-            instanceUrl = "${instanceUrl.trim().trimEnd('/')}/api/graphql"
+            val graphqlEndpoint = "${instanceUrl.trim().trimEnd('/')}/api/graphql"
 
             if (!fieldsOk) return@setOnClickListener
 
             lifecycleScope.launchWhenResumed {
                 val result = try {
-                    apolloClient(baseContext, instanceUrl)!!.mutation(AuthorizeMutation(username, password)).execute()
+                    apolloClient(baseContext, graphqlEndpoint)!!.mutation(AuthorizeMutation(username, password)).execute()
                 } catch (e: Exception) {
                     binding.errorMessage.text = "Connection error: ${e.message}"
                     binding.errorMessage.visibility = View.VISIBLE

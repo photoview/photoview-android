@@ -2,13 +2,14 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.albums.AlbumsFragment">
+    android:layout_width="100dp"
+    android:layout_height="100dp">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/albums_recycler_view"
+
+    <ImageView
+        android:id="@+id/item_image"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:background="#eee" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
